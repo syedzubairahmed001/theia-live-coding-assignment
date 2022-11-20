@@ -23,7 +23,7 @@ const NFT = (props) => {
         {imageData ?
           imageData.map((elem) => {
               console.log(elem);
-                return <Grid item md={4} lg={3} xs={6} id={elem.id}>
+                return <Grid item md={4} lg={3} xs={6} key={elem.id}>
                 <div className="a_image_container"  >
                   <img
                     src={elem.src}
