@@ -1,0 +1,55 @@
+.headerContainer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #555;
+    width: 100vw;
+}
+
+
+.waveEmoji {
+    animation: wave 1s both 1s;
+    display: inline-block;
+}
+
+.waveEmojiImage{
+    width: 30px ;
+    height: 30px;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    10% {
+        transform: rotate(20deg) scale(1.1);
+
+    }
+
+    40% {
+
+        transform: rotate(-10deg) scale(1.1);
+    }
+
+    80% {
+        transform: rotate(20deg) scale(1.1);
+        /* opacity: 0; */
+    }
+
+
+    100% {
+        transform: rotate(0deg) scale(1);
+
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 870px) {
+    .headerContainer{
+        margin-top: 15px;
+    }
+}
